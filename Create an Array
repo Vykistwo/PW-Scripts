@@ -1,7 +1,7 @@
-$Test = Invoke-Command -ComputerName "SCPRDGRWWMED02" -ScriptBlock {bpclimagelist -U -client WIPRDSHWWPAM01}
+$Test = Invoke-Command -ComputerName "" -ScriptBlock {bpclimagelist -U -client WIPRDSHWWPAM01}
 
-$BackupsCatalogWW = Invoke-Command -ComputerName "SCPRDGRWWMED02" -ScriptBlock {bpdbjobs -u -M  MARS }
-$BackupsCatalogSM = Invoke-Command -ComputerName "SCPRDGRSMMED02" -ScriptBlock {bpdbjobs -u -M ucprdtesmnbm01}
+$BackupsCatalogWW = Invoke-Command -ComputerName "" -ScriptBlock {bpdbjobs -u -M  MARS }
+$BackupsCatalogSM = Invoke-Command -ComputerName "" -ScriptBlock {bpdbjobs -u -M ucprdtesmnbm01}
 
 
 
